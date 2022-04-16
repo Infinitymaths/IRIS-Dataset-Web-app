@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/index.css') }}"type="text/css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <script src="{{ url_for('static',filename='js/index.js') }}" type='text/javascript'></script>
+    <title>Home page</title>
+</head>
+<body>
+    <header>
+    <div class="wrapper">
+        <div class="left">
+            <div class="itemContainer">
+                <a href="/">
+                    <img src="{{ url_for('static',filename='images/logo.png') }}" alt="logo" align="left">
+                </a>
+            </div>
+            <h3 class="logo">
+            IRIS FLOWER SPECIES
+            </h3>
+        </div>
+        
+    </div>
+    
+</header>
+<center>
+<div class="nav">
+    <ol>
+        <li><a href="{{ url_for('main')}}">Home</a></li>
+        <li><a href="{{ url_for('about')}}">About Project</a></li>
+        <li><a href="{{ url_for('contact')}}">Contact us</a></li>
+    </ol>
+</div>
+
+<input type="checkbox" name="" class="btn1"/>
+        <div class="login">
+            <legend>Iris Species Form</legend>
+            <form action ="{{ url_for('home') }}" method = 'post'>
+                Enter the length of the sepal in cms<input type="float" name="a" id="" placeholder = "Length of the Sepal"/>
+                Enter the Width of the sepal in cms <input type="float" name="b" id="" placeholder = "Width of the Sepal"/>
+                Enter the length of the Petal in cms <input type="float" name="c" id="" placeholder = "Length of the Petal"/>
+                Enter the width of the Petal in cms <input type="float" name="d" id="" placeholder ="Width of the Petal"/>
+                <br><br>
+                <button type="submit" value="Submit" class="btn">Submit</button>
+
+             </form>
+             
+        </div>
+
+    </center>
+</body>
+</html>

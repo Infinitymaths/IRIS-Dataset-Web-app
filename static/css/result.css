@@ -1,0 +1,22 @@
+.btn{
+    width:250px;
+    height:35px;
+    margin:8px;
+    background:#db02b0cc;
+    color:#e2e2e2;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    transition:all .4s;
+}
+
+.btn:hover{
+    background:#db02b08f;
+}
+
+a:visited{
+    color:white;
+}
+a{
+    text-decoration:none;
+}

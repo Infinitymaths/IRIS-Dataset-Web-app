@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/about.css') }}"type="text/css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <script src="{{ url_for('static',filename='js/about.js') }}" type='text/javascript'></script>
+    <title>About page</title>
+</head>
+<body>
+<center><h1>About our Project</h1>
+<h3>
+    <p>In this project implemented IRIS dataset and predicted the type of Species of the flower.</p>
+    <strong> Implemented webiste based on Flask in which user gives the length and width of Petal and length and width of Sepal and predicts the type of IRIS flower</strong>
+</h3>
+
+<button type="button" class="btn"><a href="{{ url_for('main') }}">Back to home</a></button>
+</center>
+</body>
+</html>

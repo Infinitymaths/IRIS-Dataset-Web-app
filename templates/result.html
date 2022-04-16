@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/result.css') }}"type="text/css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    
+    <title>Result page</title>
+</head>
+<body>
+    <center>
+    <div class="container">
+        <h1> Results of the data given </h1>
+        {% if data==0 %}
+        <h2> The Species is :- Iris-setosa</h2>
+        <img src="{{ url_for('static',filename='images/iris-setosa.jpg') }}" alt="Iris-setosa">
+        {% elif data==1%}
+        <h2> The Species is :- Iris-versicolor</h2>
+        <img src="{{ url_for('static',filename='images/Iris-versicolor.jpg') }}" alt="Iris-versicolor">
+        {% elif data==2 %}
+        <h2> The Species is :- Iris-virginica</h2>
+        <img src="{{ url_for('static',filename='images/Iris-virginica.jpg') }}" alt="Iris-virginica">
+        {% endif %}
+
+    </div>
+    <button type="button" class="btn"><a href="{{ url_for('main') }}">Back to Home</a></button>
+</center>
+</body>
+</html>

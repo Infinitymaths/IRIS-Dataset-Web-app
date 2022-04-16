@@ -1,0 +1,32 @@
+center h1{
+    color: #ff00ea;
+}
+
+center p{
+    color:#ff0000
+}
+center strong{
+    color:rgb(100, 10, 10);
+    
+}
+a{
+    text-decoration:none;
+}
+a:visited{
+    color:white;
+}
+.btn{
+    width:250px;
+    height:35px;
+    margin:8px;
+    background:#db02b0cc;
+    color:#e2e2e2;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    transition:all .4s;
+}
+
+.btn:hover{
+    background:#db02b08f;
+}
